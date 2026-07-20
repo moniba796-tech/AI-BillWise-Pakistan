@@ -80,7 +80,7 @@ function App() {
         userEmail={user?.email || (user?.is_anonymous ? 'Guest User' : undefined)}
         onSignOut={signOut}
       />
-      <main>{renderContent()}</main>
+     <main className="lg:flex-1 lg:min-w-0">{renderContent()}</main>
     </Layout>
   );
 }
