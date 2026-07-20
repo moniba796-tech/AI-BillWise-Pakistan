@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+ n import { useState, useCallback } from 'react';
 import { Loader2, Zap } from 'lucide-react';
 import { Navigation, Layout } from './components/Layout';
 import { HomePage } from './components/HomePage';
