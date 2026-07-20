@@ -308,7 +308,7 @@ export function UrduVoiceAssistant() {
                     </button>
                   )}
                   <p
-                    className={`text-sm whitespace-pre-wrap ${
+                   className={`text-sm whitespace-pre-wrap break-words ${
                       message.role === 'user' ? 'text-white' : 'text-slate-700'
                     }`}
                   >
