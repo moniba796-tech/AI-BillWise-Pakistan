@@ -41,7 +41,7 @@ export function Navigation({ activeTab, onTabChange, userEmail, onSignOut }: Nav
   return (
     <>
       {/* Desktop Sidebar */}
-      <aside className="hidden lg:flex lg:flex-col lg:w-64 lg:fixed lg:inset-y-0 bg-gradient-to-b from-emerald-800 via-emerald-700 to-teal-700 shadow-2xl z-50">
+     <aside className="hidden lg:flex lg:flex-col lg:w-64 lg:shrink-0 lg:h-screen lg:sticky lg:top-0 bg-gradient-to-b from-emerald-800 via-emerald-700 to-teal-700 shadow-2xl z-50">
         <div className="flex items-center gap-3 px-6 py-7 border-b border-emerald-600/30">
           <div className="p-2 bg-white/10 rounded-xl backdrop-blur-sm">
             <Zap className="w-8 h-8 text-yellow-300" />
@@ -171,8 +171,8 @@ export function Navigation({ activeTab, onTabChange, userEmail, onSignOut }: Nav
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="min-h-screen bg-slate-50">
-      <div className="lg:pl-64">{children}</div>
+    <div className="min-h-screen bg-slate-50 lg:flex">
+      {children}
     </div>
   );
 }
