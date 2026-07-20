@@ -27,6 +27,14 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Safety net: prevent any element from ever causing sideways scroll on
+   mobile (e.g. a long unbroken word/URL/number stretching a container). */
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
 /* Custom font for Urdu */
 @layer base {
   body {
